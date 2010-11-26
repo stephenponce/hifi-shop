@@ -1,0 +1,29 @@
+.prices { font-size:1.25em; }
+#main-image { width: 600px; float: left; margin-bottom:30px; border: 1px solid #444444; }
+#cart-form  { width: 300px; float: left; margin-left:30px; }
+#thumb-wrapper { width:900px; clear:both; margin-bottom:80px; }
+#product-description { width:600px; clear:both; border:none; border-top: 1px solid #999999; border-bottom: 1px solid #999999; margin-top: 10px; font-size:1.25em; padding-bottom:5px; padding-top:5px; }
+input.title { font-size: 1.25em; border: 1px solid #999999; }
+
+/* "look for similar items" taxon tweaks */
+#taxon-crumbs { float:left; margin-left:30px; margin-top: 30px; }
+/* #taxon-crumbs h3 { color:#91D25A; } */
+
+/* Styling in this extension only applies to product and main page */
+.pagination { font-size:2.0em; }
+
+/* side bar tweaks */
+.navigation-list a.root { color:#91D25A; font-weight:bold; }
+.navigation-list li a { font-size: 1.25em; }
+.navigation-list li.current a { color:#f8faf7; font-weight:bold; }
+
+/* header links */
+#header a{ color: #2E6AB1; }
+/*top search form tweaks */
+select#taxon { display:none; }
+input#keywords { font-size: 14px; }
+
+/* breadcrumbs */
+.breadcrumbs ul li span { font-size:1.25em; color: #91D25A; }
+.breadcrumbs ul li a { font-size:1.25em; }
+.breadcrumbs ul li a:hover { text-decoration:underline; color: #598fd9; }

@@ -1,0 +1,4 @@
+# pwd => /home/spree/public_html/hifi-shop/ 
+touch tmp/restart.txt
+cp public/images/noimage/updated-copies/*.jpg public/images/noimage/
+

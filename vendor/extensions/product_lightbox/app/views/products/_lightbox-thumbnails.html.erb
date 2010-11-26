@@ -1,0 +1,28 @@
+<% if !product.images.empty? %>
+
+  <% content_for :head do -%>
+    <script type="text/javascript" charset="utf-8">
+      var images = new Array();
+      <% @variants.each do |v| %>
+        images[<%= v.id.to_s %>] = new Array();
+        <% v.images.each_with_index do |image, i| %>
+          images[<%= v.id.to_s %>][<%= i %>] = <%= link_to(image_tag(image.attachment.url(:mini)), image.attachment.url(:product)).to_json %>;
+        <% end %>
+      <% end %>
+    $(function() {
+	jQuery('#thumbnails a').lightBox();
+    });
+    </script>
+    <%= javascript_include_tag 'jquery.lightbox.js' %>
+    <%= stylesheet_link_tag 'lightbox.css' %>
+  <% end -%>
+
+  <div id="gallery">
+    <ul id="variant-thumbnails" class="thumbnails">
+      <% @variants.select { |v| v.available? }.collect { |v| v.images }.flatten.uniq.each do |i| %>
+      <li><%= link_to image_tag(i.attachment.url(:mini)), i.attachment.url(:product), { :title => product.name } %></li>
+      <% end %>
+    </ul>
+  </div>
+
+<% end -%>

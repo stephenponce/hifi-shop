@@ -1,0 +1,15 @@
+usps: 
+  login: '633UNIVE7685'
+ups: 
+  key: XmlAccessKey
+  login: UPSDotComLogin
+  password: UPSDotComPassword
+fedex:
+  key: '5Z1liQP3IIQaeucb'
+  password: 'h0x4IXcplI8HQbp8CzEVwKHA1'
+  account: '510087569'
+  login: '118513073'
+  test: true
+shipwire:
+  login: EmailAddress
+  password: Password

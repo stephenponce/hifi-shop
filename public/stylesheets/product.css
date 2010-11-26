@@ -1,0 +1,25 @@
+/* RAILS_ROOT/vendor/extensions/stephs_photos/public/stylesheets/stephs_photos.css */
+body { background: #000; }
+body.two-col div#wrapper { background: none; }
+a, #header a { color: #FFF; text-decoration: none; }
+
+ul#nav-bar { width: 280px; line-height: 30px; margin-top: 87px; font-size: 1.0em; }
+ul#nav-bar li form { display: none; }
+
+.container { width: 750px; }
+#wrapper { padding-top: 0px; }
+
+.product-listing li { background: #FFF; height: 140px; }
+.product-listing li a.info { background: #FFF; }
+
+body#product-details div#wrapper { background: #000; }
+body#product-details div#content, body#product-details div#content h1 { color: #FFF; margin-left: 10px; }
+#taxon-crumbs { display: none; }
+#product-description { width: 190px; border: none; }
+.price.selling { color: #FFF; }
+#product-image #main-image { min-height: 170px; }
+
+/* Styling in this extension only applies to product and main page */
+
+div#footer { display: none; }
+
