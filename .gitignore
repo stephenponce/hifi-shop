@@ -1,0 +1,14 @@
+# spree files #
+CHANGELOG
+CONTRIBUTORS
+INSTALL
+
+# all temp files #
+tmp/*
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
